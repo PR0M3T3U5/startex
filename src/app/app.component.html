@@ -1,0 +1,106 @@
+<style>
+    .header {
+        height: 300px;
+
+    }
+    .main-bienvenido{
+        padding: 50px;
+        text-align: center;
+    }
+    .main-titulo{
+        color: coral;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even){background-color: #d0e9fd}
+
+
+</style>
+
+<div class="container header">
+    <div class="row main-bienvenido">
+        <div class="col-4"></div>
+        <div class="col-4"><h1>Bienvenido a {{ title }}!</h1></div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+
+            <div class="card">
+                <div class="card-body">
+                    <table class="table-sm table-hover caption-top" style="font-size: 16px;">
+                        <caption>Personas</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Documento</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Frank</td>
+                            <td>Silva</td>
+                            <td>@fsc</td>
+                            <td>---</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form action="">
+                <div class="mb-3">
+                    <br>
+                    <label for="exampleNombre" class="form-label">Nombre</label>
+                    <input class="form-control form-control-sm" type="text" placeholder="Jhon Smith" aria-label=".form-control-sm example">
+                </div>
+                <button type="button" class="btn btn-primary">Subir Documento</button>               
+            </form>
+            <p></p>
+            <button type="button" class="btn btn-primary">Guardar</button> 
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
